@@ -1,0 +1,61 @@
+body{background-color: #264673; box-sizing: border-box; font-family: Arial;display: flex;}
+		form{
+			background-color: white;
+			padding: 10px;
+			margin: 100px auto;
+			width: 400px;
+		}
+		input[type=text], input[type=password]{
+			padding: 10px;
+			width: 380px;
+		}
+		input[type="submit"]{
+			border: 0;
+			background-color: #ED8824;
+			padding: 10px 20px;
+		}
+		.error{
+			background-color: #FF9185;
+			font-size: 12px;
+			padding: 10px;
+		}
+		.correcto{
+			background-color: #A0DEA7;
+			font-size: 12px;
+			padding: 10px;
+		}
+
+		/*estilos para tablets*/
+@media only screen and (min-width: 768px) and (max-width: 940px){
+	.proyect{
+		width: 600px;
+	}
+}
+
+/*estilos para smartphones*/
+@media only screen and (min-width: 400px) and (max-width: 767px){
+	.proyect{
+		width: 400px;
+	}
+}
+
+/*estilos para telefonos medianos*/
+@media only screen and(min-width: 200px) and (max-width: 399px){
+	.proyect{
+		width: 200px;
+	}
+}
+
+/*estilos para telefonos pequeños*/
+@media only screen and(min-width: 100px) and (max-width: 199px){
+	.proyect{
+		width: 100px;
+	}
+}
+
+/*estilos para telefonos pequeños*/
+@media only screen and(min-width: 10px) and (max-width: 99px){
+	.proyect{
+		width: 10px;
+	}
+}
