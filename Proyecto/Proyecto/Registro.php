@@ -9,56 +9,13 @@
 </head>
 <body>
 	
-	<form action="#" method="POST">
+	<form action="GuardarR.php" method="POST">
 	<div id="proyect">
 	
 	<?php
-		//Declarar todas las variables 
-			$Nombres = "";
-			$Apellidos="";
-			$dirección="";
-			$password = "";
-			$email = "";
-			
-			if(isset($_POST['Nombres'])){
-				$Nombres = $_POST['Nombres'];
-				$Apellidos = $_POST['Apellidos'];
-				$dirección = $_POST['dirección'];
-				$password = $_POST['password'];
-				$email = $_POST['email'];
-				
-			}
-				
-				//Validar que los campo no estén vacíos
-				$campos = array();
-				if($Nombres == ""){
-					array_push($campos, "El campo Nombres no pude estar vacío");
-				}
-				if($Apellidos == ""){
-					array_push($campos, "El campo Apellidos no pude estar vacío");
-				}
-				if($dirección == ""){
-					array_push($campos, "El campo Dirección no pude estar vacío");
-				}
-				if($password == "" || strlen($password) < 6){
-					array_push($campos, "El campo Password no puede estar vacío, ni tener menos de 6 caracteres.");
-				}
-				if($email == "" || strpos($email, "@") === false){
-					array_push($campos, "Ingresa un correo electrónico válido.");
-				}
-				
-				if(count($campos) > 0){
-					echo "<div class='error'>";
-					for($i = 0; $i < count($campos); $i++){
-						echo "<li>".$campos[$i]."</i>";
-					}
-				}else{
-					echo "<div class='correcto'>
-							Datos correctos";
-				}
-				echo "</div>";
-			
+	include_once 'config/constantes.php';	
 		?>
+		<h2><b>Registro de Usuarios:</b></h2>
 		<p>
 		<b>Nombres:</b><br/>
 		<input type="text" name="Nombres" value="<?php if(isset($Nombres)) echo $Nombres; ?>" required >
@@ -76,21 +33,19 @@
 
 		<p>
 		<b>Password:</b><br/>
-		<input type="password" name="password"  value="<?php if(isset($password)) echo $password; ?>" required >
+		<input type="password" name="password"  value="<?php if(isset($password)) echo $password; ?>" required>
+
 		</p>
 
 		<p>
 		<b>correo electrónico:</b><br/>
 		<input type="text" name="email" value="<?php if(isset($email)) echo $email; ?>" required>
 		</p>
-
-		
-		
-		<nav>
+		<nav class="irR">
 		<a href="index.php">Ir a login</a>
 </nav>	
 
-		<p><input type="submit" value="enviar datos"></p> 
+		<button type="submit" class="btn-success">Guardar</button>
 	</div>
 	</form>
 </body>

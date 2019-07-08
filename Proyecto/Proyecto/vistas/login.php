@@ -21,7 +21,7 @@
         <p><b>Password:</b> <br>
         <input type="password" name="password"></p>
         <p class="center"><input type="submit" value="Iniciar Sesión"></p>
-            <nav class="irR"></nav>
+            <nav class="irR">
     <a href="Registro.php">Ir a Registro</a>
 </nav>  
 </div>

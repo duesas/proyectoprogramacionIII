@@ -13,6 +13,7 @@ class User extends DB{
             return false;
         }
     }
+     
     public function setUser($email){
         $query = $this->connect()->prepare('SELECT * FROM Registro WHERE email = :email');
         $query->execute(['email' => $email]);

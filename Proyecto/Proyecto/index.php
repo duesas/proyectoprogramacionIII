@@ -1,4 +1,5 @@
 <?php
+include_once "config/constantes.php";
 include_once 'includes/user.php';
 include_once 'includes/user_session.php';
 
