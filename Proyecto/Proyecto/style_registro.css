@@ -8,6 +8,10 @@ body{background-color: #264673; box-sizing: border-box; font-family: Arial;displ
 		input[type=text], input[type=password]{
 			padding: 10px;
 			width: 380px;
+			border: 1px solid silver;
+			color: #1E69E3;
+			font-size: 18px;
+    		outline: none;
 		}
 		input[type="submit"]{
 			border: 0;

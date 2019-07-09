@@ -18,6 +18,9 @@ input[type=text], input[type=password]{
     font-size: 18px;
     outline: none;
     width: 370px;
+    border: 1px solid silver;
+	color: #1E69E3;
+	
    
 }
 input[type=submit]{
