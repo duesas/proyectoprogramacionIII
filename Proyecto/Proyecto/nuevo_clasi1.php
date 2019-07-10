@@ -34,7 +34,7 @@
   		<br>
   		<button type="submit" class="btn-success">Guardar</button>
        <nav class="irR">
-      <a href="index.php"> <button type="button" class="btn-info">Regresar</button> </a> 
+      <a href="index.php"> <button type="button" class="btn-ir">Regresar</button> </a> 
        </nav> 
      </form>
   	</div>

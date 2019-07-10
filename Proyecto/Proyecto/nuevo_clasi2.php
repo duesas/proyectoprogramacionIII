@@ -1,6 +1,7 @@
 <?php
 
 	
+
 	NuevoClasificado($_POST['titulo'], $_POST['texto']);
 	
 	function NuevoClasificado($titulo, $texto)

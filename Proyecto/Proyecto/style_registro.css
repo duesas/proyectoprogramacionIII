@@ -13,15 +13,27 @@ body{background-color: #264673; box-sizing: border-box; font-family: Arial;displ
 			font-size: 18px;
     		outline: none;
 		}
-		input[type="submit"]{
-			border: 0;
-			background-color: #ED8824;
-			padding: 10px 20px;
+		input[type=submit]{
+    	background-color: #1E69E3;
+    	color: white;
+    	padding: 8px;
+    	border: none;
+    	width: 200px;
+		
 		}
+		.center{
+    text-align: center;
+}
 		.btn-success{
 		background: #0CB1BF;
 		color:black;
 		}
+
+		.btn-ir{
+		background: silver;
+		color:black;
+		}
+
 
 		/*estilos para tablets*/
 @media only screen and (min-width: 768px) and (max-width: 940px){

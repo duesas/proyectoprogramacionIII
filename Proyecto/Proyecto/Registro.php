@@ -7,7 +7,7 @@
 	<link rel="stylesheet" type="text/css" href="style_registro.css">
 	<link rel="icon" href="img/logo.ico"> <!-- este codigo es para el favico de la pagina-->
 </head>
-<body>
+<body background="img/swirl4.jpg" style="background-attachment: fixed">
 	
 	<form action="GuardarR.php" method="POST">
 	<div id="proyect">
@@ -15,7 +15,7 @@
 	<?php
 	include_once 'config/constantes.php';	
 		?>
-		<h2><b>Registro de Usuarios:</b></h2>
+		<h2 class="center"><b>Registro de Usuarios</b></h2>
 		<p>
 		<b>Nombres:</b><br/>
 		<input type="text" name="Nombres" value="<?php if(isset($Nombres)) echo $Nombres; ?>" required >
@@ -41,9 +41,9 @@
 		<b>correo electrónico:</b><br/>
 		<input type="text" name="email" value="<?php if(isset($email)) echo $email; ?>" required>
 		</p>
-		<nav class="irR">
-		<a href="index.php">Ir a login</a>
-</nav>	
+		
+		 <a href="index.php"> <button type="button" class="btn-ir">ir a login</button> </a>
+	
 
 		<button type="submit" class="btn-success">Guardar</button>
 	</div>

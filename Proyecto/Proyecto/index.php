@@ -5,7 +5,7 @@ include_once 'includes/user_session.php';
 
 $userSession = new UserSession();
 $user = new User();
-if(isset($_SESSION['email'])){
+if(isset($_SESSION['ids'])){
     
     $user->setUser($userSession->getCurrentUser());
     include_once 'vistas/home.php';

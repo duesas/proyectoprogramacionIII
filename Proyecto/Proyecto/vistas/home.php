@@ -17,26 +17,25 @@
 
  <div id="contenido">
     <table style="margin: auto; width: 800px; border-collapse: separate; border-spacing: 10px 5px;">
-        <thead>
+       
             <th>titulo</th>
             <th>texto</th>
             <th>fecha</th>
             <th>Acciones</th>
-</head>
-<body>
-    <div id="menu">
-        <ul>
-            <li class="cerrar-sesion"><a href="includes/logout.php">Cerrar sesión</a></li>
-        </ul>
-    </div>
+
+            <a href="includes/logout.php"><button type="button" class="btn-cerrar">Cerrar sesión</button></a>
+            <a href="perfil.php"><button type="button" class="btn-ir">Bienvenido <strong><?php echo $_SESSION['ids'];?></strong> </button></a>
+       
+    
 
      <a href="nuevo_clasi1.php"> <button type="button" class="btn-info">Nuevo</button> </a> 
         </thead>
 
       <?php
         include "conexion.php";
-
-        $sentecia="SELECT * FROM publicaciones";
+       
+ 
+      $sentecia="SELECT * FROM publicaciones ";
         $resultado= $conexion->query($sentecia) or die (mysqli_error($conexion));
         while($fila=$resultado->fetch_assoc())
         {
@@ -44,6 +43,7 @@
             echo "<td>"; echo $fila['titulo']; echo "</td>";
             echo "<td>"; echo $fila['texto']; echo "</td>";
             echo "<td>"; echo $fila['fecha']; echo "</td>";
+           
              echo "<td>";
             echo "<a href='modif_clasi1.php?id=".$fila['id']."'> <button type='button' class=' btn-modi'>Modificar</button> </a>";
             echo " <a href='eliminar_clasi.php?id=".$fila['id']."'> <button type='button' class=' btn-danger'>Eliminar</button> </a>";
