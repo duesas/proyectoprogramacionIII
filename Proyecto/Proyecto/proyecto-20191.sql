@@ -38,13 +38,9 @@ CREATE TABLE `publicaciones` (
   `fecha` datetime NOT NULL DEFAULT CURRENT_TIMESTAMP
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
---
--- Volcado de datos para la tabla `publicaciones`
---
 
-INSERT INTO `publicaciones` (`id`, `usuario_id`, `titulo`, `texto`, `fecha`) VALUES
-(1, 0, 'hola como estas', '22', '2019-07-08 17:20:56'),
-(2, 0, 'hola como estas', '22', '2019-07-08 17:21:58');
+
+
 
 -- --------------------------------------------------------
 
@@ -61,12 +57,9 @@ CREATE TABLE `registro` (
   `email` varchar(100) COLLATE utf32_spanish_ci NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf32 COLLATE=utf32_spanish_ci;
 
---
--- Volcado de datos para la tabla `registro`
---
 
-INSERT INTO `registro` (`id`, `Nombres`, `Apellidos`, `dirección`, `password`, `email`) VALUES
-(1, 'cristopher', 'galanton', 'cagua', '2222', 'cristophda@hotmail.com');
+
+
 
 --
 -- Índices para tablas volcadas
