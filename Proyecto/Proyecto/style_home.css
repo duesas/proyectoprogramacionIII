@@ -67,36 +67,112 @@ body{box-sizing: border-box; font-family: Arial;display: flex;}
 		
 
 		/*estilos para tablets*/
-@media only screen and (min-width: 768px) and (max-width: 940px){
-	.proyect{
-		width: 600px;
+@media only screen and (min-width: 1025px) and (max-width: 1200px){
+	.body{
+		width: 1000px;
+		margin: 0px auto; 
+		padding: 5px;
+		height: 10%;
 	}
+	#img1 {
+	height: 10%;
+	width: 100%;
+
+}
+#img2 {
+	height: 30%;
+	width: 100%;
+}
 }
 
 /*estilos para smartphones*/
-@media only screen and (min-width: 400px) and (max-width: 767px){
-	.proyect{
-		width: 400px;
+@media only screen and (min-width: 769px) and (max-width: 1024px){
+	.body{
+		width: 600px;
+		margin: 0px auto; 
+		padding: 5px;
+		height: 10%;
 	}
+	#img1 {
+	height: 10%;
+	width: 80%;
+
+}
+#img2 {
+	height: 10%;
+	width: 80%;
+}
 }
 
 /*estilos para telefonos medianos*/
-@media only screen and(min-width: 200px) and (max-width: 399px){
-	.proyect{
-		width: 200px;
+@media only screen and(min-width: 481px) and (max-width: 768px){
+	.body{
+		width: 400px;
+		margin: 0px auto; 
+		padding: 5px;
+		height: 10%;
+	}
+	#img1 {
+	height: 5%;
+	width: 20%;
+
+}
+#img2 {
+	height: 10%;
+	width: 20%;
+}
+}
+
+/*estilos para telefonos pequeños*/
+@media only screen and(min-width: 321px) and (max-width: 480px){
+	.body{
+		width: 300px;
+		margin: 0px auto; 
+		padding: 5px;
+		height: 5%;
+	}
+	#img1 {
+	height: 4%;
+	width: 15%;
+
+}
+#img2 {
+	height: 4%;
+	width: 15%;
+}
+#contenido {
+	
+	border: 2px solid silver;
+	margin: 0px auto;
+	width: 20%;
+	background: while;
+	padding: 8px;
 	}
 }
 
 /*estilos para telefonos pequeños*/
-@media only screen and(min-width: 100px) and (max-width: 199px){
-	.proyect{
+@media only screen and(min-width: 100px) and (max-width: 320px){
+	.body{
 		width: 100px;
+		margin: 0px auto; 
+		padding: 5px;
+		height: 5%;
 	}
-}
+	#img1 {
+	height: 3%;
+	width: 10%;
 
-/*estilos para telefonos pequeños*/
-@media only screen and(min-width: 10px) and (max-width: 99px){
-	.proyect{
-		width: 10px;
+}
+#img2 {
+	height: 3%;
+	width: 10%;
+}
+#contenido {
+	
+	border: 2px solid silver;
+	margin: 0px auto;
+	width: 10%;
+	background: while;
+	padding: 6px;
 	}
 }
